@@ -1,0 +1,54 @@
+
+drop database GestionParking;
+
+create database GestionParking;
+
+
+create table parking(
+	id_parking int(11) not null auto_increment,
+	nom_parking varchar(100) not null,
+	code_parking varchar(100) not null unique , 
+	type varchar(100) not null,
+	primary key(id_parking)
+);
+
+
+create table vehicules(
+	id_vehicule int(11) not null auto_increment,
+	nom_vehicule varchar(100) not null unique,
+	primary key(id_vehicule)
+);
+
+
+create table reservations(
+	id_reservez int(11) not null auto_increment,
+	nom_conducteur varchar(100) not null,
+	phone_conducteur varchar(100) not null,
+	code_parking varchar(100) not null, 
+	vehicule varchar(100) not null,
+	date_entre varchar(100) not null,
+	heure_entre varchar(100) not null,
+	tarif varchar(100) not null,
+	primary key(id_reservez)
+);
+
+
+insert into parking(nom_parking,code_parking,type ) values("Est","E1","Couvert");
+insert into parking(nom_parking,code_parking,type ) values("Ouest","O1","Exterieur");
+
+
+insert into vehicules(nom_vehicule ) values("Velo");
+insert into vehicules(nom_vehicule ) values("Moto");
+insert into vehicules(nom_vehicule ) values("Voiture");
+insert into vehicules(nom_vehicule ) values("Bus");
+
+
+	insert into reservations(nom_conducteur,phone_conducteur,code_parking,vehicule,date_entre,heure_entre,tarif ) values("Abdel","6091298","P1","Moto","12/05/2023","12h00","8000");
+
+
+
+
+
+
+
+

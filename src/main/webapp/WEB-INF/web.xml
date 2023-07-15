@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+
+  <servlet>
+    <servlet-name>Accueil</servlet-name>
+    <servlet-class>com.parking.servlet.Accueil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Accueil</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>AjouterParking</servlet-name>
+    <servlet-class>com.parking.servlet.AjouterParking</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjouterParking</servlet-name>
+    <url-pattern>/ajouterParking</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>ModifierParking</servlet-name>
+    <servlet-class>com.parking.servlet.ModifierParking</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifierParking</servlet-name>
+    <url-pattern>/modifierParking</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>SupprimerParking</servlet-name>
+    <servlet-class>com.parking.servlet.SupprimerParking</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SupprimerParking</servlet-name>
+    <url-pattern>/supprimerParking</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+  <servlet>
+    <servlet-name>Reservez</servlet-name>
+    <servlet-class>com.parking.servlet.Reservez</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Reservez</servlet-name>
+    <url-pattern>/reservez</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Tarifs</servlet-name>
+    <servlet-class>com.parking.servlet.Tarifs</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Tarifs</servlet-name>
+    <url-pattern>/tarifs</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Annulations</servlet-name>
+    <servlet-class>com.parking.servlet.Annulations</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Annulations</servlet-name>
+    <url-pattern>/annulations</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Modifications</servlet-name>
+    <servlet-class>com.parking.servlet.Modifications</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Modifications</servlet-name>
+    <url-pattern>/modifications</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>Panier</servlet-name>
+    <servlet-class>com.parking.servlet.Panier</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Panier</servlet-name>
+    <url-pattern>/panier</url-pattern>
+  </servlet-mapping>
+  
+  
+   <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
+  
+</web-app>
